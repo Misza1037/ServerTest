@@ -1,7 +1,7 @@
 import server
 
 
-HOST = '127.0.0.1'
+HOST = ''
 PORT = 65065
 
 

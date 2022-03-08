@@ -22,4 +22,4 @@ app.add_routes([
     web.get('/', handler=handler)
 ])
 print('Starting API Application')
-web.run_app(app=app, host='', port=5555)
+web.run_app(app=app)

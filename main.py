@@ -1,7 +1,7 @@
 import server
 
 
-HOST = '127.0.0.1'
+HOST = 'servertest-production.up.railway.app'
 PORT = 65065
 
 

@@ -23,4 +23,6 @@ app.add_routes([
     web.get('/', handler=handler)
 ])
 print('Starting API Application')
-web.run_app(app=app, host='0.0.0.0', port=os.environ['$PORT'])
+print(os.environ)
+raise ValueError(os.environ)
+web.run_app(app=app, host='0.0.0.0', port=os.environ['PORT'])

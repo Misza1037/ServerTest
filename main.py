@@ -8,6 +8,7 @@
 # if __name__ == '__main__':
 #     server.connection(HOST, PORT)
 #
+import os
 
 import aiohttp
 from aiohttp import web
@@ -22,4 +23,4 @@ app.add_routes([
     web.get('/', handler=handler)
 ])
 print('Starting API Application')
-web.run_app(app=app)
+web.run_app(app=app, host='0.0.0.0', port=os.environ['PORT'])
